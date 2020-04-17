@@ -15,4 +15,11 @@ describe('Encoder Tests', () => {
         expect(encStr).toEqual('zyxw')
 
     })
+    it('should equal', () => {
+        const str = 'aBcD12 !)))';
+        const encStr = Encoder(str);
+
+        expect(encStr).toEqual('zyxw')
+
+    })
 });

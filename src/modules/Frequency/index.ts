@@ -4,6 +4,7 @@ alphabet.forEach((char: string) => {
     frequencyObj[char] = 0;
 })
 export default (str: string) => {
+    str = str.replace(/[^a-zA-Z]\s/g,"")
     const strArr = str.split("");
 
     strArr.forEach((char: string) => {

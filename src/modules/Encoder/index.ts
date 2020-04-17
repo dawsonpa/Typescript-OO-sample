@@ -4,6 +4,7 @@ export default (str: string) => {
     const encodedStrArr = [];
     const strArr = str.split("");
     strArr.forEach((char: string) => {
+        str = str.replace(/[^a-zA-Z]\s/g,"");
         const ind = alphabet.indexOf(char.toLowerCase());
         const encodedInd = 25 - ind;
         const encodedChar = alphabet[encodedInd];
